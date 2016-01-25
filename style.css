@@ -1,0 +1,57 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Helvetica, sans-serif;
+    background-repeat: repeat;
+    background-image: url("images/2.jpg");
+}
+
+#content {
+    width: 100%;
+    height: inherit;
+    margin: auto;
+    background-image: url("images/overlay.png");
+}
+
+#one {
+    width: 80%;
+    margin: auto;
+    padding-top: 180px;
+    padding-bottom: 50px;
+}
+
+#photo {
+    width: 100px;
+    height: 140px;
+    border: 8px solid #171616;
+    border-radius: 45%;
+    margin: auto;
+    background-image: url("images/my_face.jpg");
+    background-size: cover;
+    background-position: right;
+    -webkit-transition: background-position .5s ease;
+    transition: background-position .5s ease;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -58px;
+}
+
+#photo:hover {
+    background-image: url(images/my_face.jpg);
+    background-position: left;
+}
+
+#text {
+    padding-top: 80px;
+    background-repeat: repeat;
+    background-image: url(images/5.jpg);
+    border: 0px;
+    border-radius: 1%;
+    font-size: 4em;
+    margin: 0 auto;
+    box-shadow: 5px 5px 50px #888888;
+    text-align: center;
+}
