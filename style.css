@@ -4,14 +4,14 @@ html, body {
 	width: 100%;
 	height: 100%;
 	font-family: Helvetica, sans-serif;
-    background-repeat: repeat;
-    background: url("images/5.jpg");
+    background: url("images/5.jpg") repeat;
     overflow: hidden;
     cursor: context-menu;
 }
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 #content {
@@ -22,25 +22,28 @@ a {
 }
 
 #content_two {
+    background: url("images/5.jpg") repeat;
     width: 100%;
     height: 100%;
     margin: auto;
-    position: relative;
+    position: absolute;
 }
 
 #one {
     width: 70%;
+    height: 100%;
     left: 15%;
-    position: absolute;
-    padding-top: 180px;
-    padding-bottom: 50px;
+    position: fixed;
+    top: 15%;
+    padding-bottom: 20%;
 }
 
 #photo {
-    width: 100px;
-    height: 140px;
-    border: 8px solid #171616;
-    border-radius: 45%;
+    width: 200px;
+    height: 280px;
+    border: 10px solid transparent;
+    border-image: linear-gradient(to left bottom, dodgerblue 0%, chartreuse 33%, chartreuse 66%, dodgerblue 100%);
+    border-image-slice: 1;
     margin: auto;
     background-image: url("images/my_face.jpg");
     background-size: cover;
@@ -62,6 +65,7 @@ a {
     text-align: left;
     float: left;
     width: 50%;
+    position: absolute;
 }
 
 .wrap {
@@ -76,11 +80,11 @@ a {
 }
 
 @keyframes sponge {
-  0% {transform: scale(1); color:#08FDD8;}
+  0% {transform: scale(1); color: dodgerblue;}
   30% {transform: scaleX(1.25) scaleY(0.75);}
   40% {transform: scaleX(0.75) scaleY(1.25);}
-  60% {transform: scaleX(1.15) scaleY(0.85);}
-  100% {transform: scale(1); color: #525252;}
+  60% {transform: scaleX(1.15) scaleY(0.85); color: dodgerblue;}
+  100% {transform: scale(1);}
 }
 .sponge {
   animation-name: sponge;
@@ -88,11 +92,12 @@ a {
 }
 
 @keyframes sponge2 {
-  0% {transform: scale(1); color: black;}
+  0% {transform: scale(1);}
+  15% {color: #fff; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
   30% {transform: scaleX(1.15) scaleY(0.85);}
-  40% {transform: scaleX(0.85) scaleY(1.15); color: #525252;}
-  60% {transform: scaleX(1.15) scaleY(0.85);}
-  100% {transform: scale(1); color: black;}
+  40% {transform: scaleX(0.85) scaleY(1.15);}
+  60% {transform: scaleX(1.15) scaleY(0.85); color: #fff;  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+  100% {transform: scale(1);}
 }
 
 .sponge2 {
@@ -102,7 +107,7 @@ a {
 
 .elegantshadow {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-  font-size: 55px;
+  font-size: 75px;
   font-weight: 700;
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -129,8 +134,244 @@ a {
 }
 
 .text_part2 {
-    font-size: medium;
+    font-size: large;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     float: left;
+}
+
+.work {
+    display: table;
+    width: 10%;
+    height: 10%;
+    border: 0px solid;
+    border-radius: 50%;
+    background-color: dodgerblue;
+    position: fixed;
+    bottom: 13%;
+    left: 15%;
+}
+
+.skills {
+    display: table;
+    width: 10%;
+    height: 10%;
+    border: 0px solid;
+    border-radius: 50%;
+    background-color: chartreuse;
+    position: fixed;
+    bottom: 13%;
+    left: 35%;
+}
+
+.about {
+    display: table;
+    width: 10%;
+    height: 10%;
+    border: 0px solid;
+    border-radius: 50%;
+    background-color: chartreuse;
+    position: fixed;
+    bottom: 13%;
+    left: 55%;
+}
+
+.contact {
+    display: table;
+    width: 10%;
+    height: 10%;
+    border: 0px solid;
+    border-radius: 50%;
+    background-color: dodgerblue;
+    position: fixed;
+    bottom: 13%;
+    left: 75%;
+}
+
+.btn_animate {
+    animation-name: btn_animate;
+    animation-duration: 1s;
+}
+
+@keyframes btn_animate {
+    40% {transform: scaleX(1.25) scaleY(1.25) rotate(20deg); background-color: chartreuse;}
+    80% {transform: scaleX(1.25) scaleY(1.25) rotate(-20deg); background-color: chartreuse;}
+}
+
+.btn_animate2 {
+    animation-name: btn_animate2;
+    animation-duration: 1s;
+}
+
+@keyframes btn_animate2 {
+    40% {transform: scaleX(1.25) scaleY(1.25) rotate(-20deg); background-color: dodgerblue;}
+    80% {transform: scaleX(1.25) scaleY(1.25) rotate(20deg); background-color: dodgerblue;}
+}
+
+span {
+    display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+    color: whitesmoke;
+    font-size: large;
+    font-weight: 700;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 750px) {
+    
+    #one {
+        width: 75%;
+        left: 12.5%;
+        top: 20%;
+    }
+    
+    #text {
+        font-size: 35px;
+    }
+    
+    .elegantshadow {
+        font-size: 45px;
+    }
+    
+    .text_part2 {
+        font-size: medium;
+    }
+    
+    #photo {
+        width: 120px;
+        height: 168px;
+    }
+    
+    .btn, .btn2 {
+        bottom: 20%;
+    }
+    
+    .work {
+        left: 12%;
+    }
+    
+    .skills {
+        left: 34%;
+    }
+    
+    .about {
+        left: 56%;
+    }
+    
+    .contact {
+        left: 78%;
+    }
+    
+    span {
+        font-size: medium;
+        font-weight: 500;
+    }
+}
+
+
+@media screen and (max-height: 600px) {
+    
+    #photo {
+        width: 120px;
+        height: 168px;
+    }
+}
+
+@media screen and (max-width: 600px), screen and (max-height: 480px) {
+    
+    #one {
+        width: 90%;
+        top: 24%;
+        left: 5%;
+    }
+    
+    .btn, .btn2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    @media screen and (min-height: 700px) {
+        #one {
+            top: 20%;
+            left: 15%;
+        }
+        .btn,.btn2 {
+            bottom: 20%;
+        }
+    }
+}
+
+@media screen and (width: 2560px) {
+    @media screen and (height: 1600px) {
+        #text {
+            font-size: 8.5em;
+        }
+        
+        .elegantshadow {
+            font-size: 1.6em;
+        }
+        
+        .text_part2 {
+            font-size: 50px;
+        }
+        
+        #photo {
+            width: 400px;
+            height: 560px;
+        }
+        
+        .btn, .btn2 {
+            bottom: 20%;
+        }
+        
+        span {
+            font-size: 45px;
+        }
+    }
+}
+
+/* Minimum screen size check */
+
+@media screen and (max-width: 400px), screen and (max-height: 300px) {
+    #content, #content_two, .landscape {
+        display: none;
+    }
+    body {
+        display: table;
+    }
+    .size {
+        text-align: center;
+        display: table-cell!important;
+        vertical-align: middle;
+        font-size: x-large;
+        font-weight: 800;
+    }
+}
+
+
+
+/* Lanscape orientation check */
+
+@media screen and (orientation:portrait)  {
+    #content, #content_two, .size {
+        display: none;
+    }
+    body {
+        display: table;
+    }
+    .landscape {
+        text-align: center;
+        display: table-cell!important;
+        vertical-align: middle;
+        font-size: x-large;
+        font-weight: 800;
+    }
+}
+
+.landscape {
+    display: none;
 }
