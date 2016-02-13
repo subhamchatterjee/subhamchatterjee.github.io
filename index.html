@@ -5,10 +5,11 @@
         <title>Meet Subham</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="main.js"></script>
-        <script src="canvas.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/canvas.js"></script>
         <!-- Icons -->
         <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-touch-icon-60x60.png">
@@ -33,6 +34,17 @@
     </head>
     <body>
         <div id="content">
+            <div id="mob_nav_btn" onclick="mob_nav()"><i class="fa fa-navicon fa-3x"></i></div>
+            <div id="mob_nav" class="">
+                <div id="part1">
+                    <a class="mob_btn" href="work.html"><span>Work</span></a>
+                    <a class="mob_btn2" href=""><span>Skills</span></a>
+                </div>
+                <div id="part2">
+                    <a class="mob_btn2" href=""><span>About</span></a>
+                    <a class="mob_btn" href=""><span>Contact</span></a>
+                </div>
+            </div>
             <canvas id="world"><img id="bg" src="images/5.jpg" /></canvas>
             <div id="one">
                 <div id="text">

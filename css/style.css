@@ -6,7 +6,7 @@ html, body {
 	font-family: Helvetica, sans-serif;
     overflow: hidden;
     cursor: context-menu;
-    background-image: url("images/5.jpg");
+    background-image: url("../images/5.jpg");
 }
 
 a {
@@ -38,7 +38,7 @@ a {
     border-image: linear-gradient(to left bottom, dodgerblue 0%, chartreuse 33%, chartreuse 66%, dodgerblue 100%);
     border-image-slice: 1;
     margin: auto;
-    background-image: url("images/my_face.jpg");
+    background-image: url("../images/my_face.jpg");
     background-size: cover;
     background-position: right;
     -webkit-transition: background-position .5s ease;
@@ -47,7 +47,6 @@ a {
 }
 
 #photo:hover {
-    background-image: url(images/my_face.jpg);
     background-position: left;
 }
 
@@ -133,7 +132,7 @@ a {
     float: left;
 }
 
-.work {
+.btn {
     display: table;
     width: 10%;
     height: 10%;
@@ -141,42 +140,34 @@ a {
     border-radius: 50%;
     background-color: dodgerblue;
     position: fixed;
+}
+
+.btn2 {
+    display: table;
+    width: 10%;
+    height: 10%;
+    border: 0px solid;
+    border-radius: 50%;
+    background-color: chartreuse;
+    position: fixed;
+}
+
+.work {
     bottom: 13%;
     left: 15%;
 }
 
 .skills {
-    display: table;
-    width: 10%;
-    height: 10%;
-    border: 0px solid;
-    border-radius: 50%;
-    background-color: chartreuse;
-    position: fixed;
     bottom: 13%;
     left: 35%;
 }
 
 .about {
-    display: table;
-    width: 10%;
-    height: 10%;
-    border: 0px solid;
-    border-radius: 50%;
-    background-color: chartreuse;
-    position: fixed;
     bottom: 13%;
     left: 55%;
 }
 
 .contact {
-    display: table;
-    width: 10%;
-    height: 10%;
-    border: 0px solid;
-    border-radius: 50%;
-    background-color: dodgerblue;
-    position: fixed;
     bottom: 13%;
     left: 75%;
 }
@@ -279,9 +270,6 @@ span {
         left: 5%;
     }
     
-    .btn, .btn2 {
-        display: none;
-    }
 }
 
 @media screen and (min-width: 1001px) {
@@ -369,4 +357,87 @@ span {
 
 .size {
     display: none;
+}
+
+#mob_nav_btn {
+    color: #525252;
+    display: none;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 10000;
+}
+
+#mob_nav {
+    display: none;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+}
+
+#part1 {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#part1 > a {
+    position: fixed;
+    left: 25%;
+    background: dodgerblue;
+    width: 80px;
+    height: 55px;
+    text-align: center;
+    border: 0px solid;
+    border-radius: 30%;
+}
+#part1 > .mob_btn {
+    position: fixed;
+    top: 30%;
+}
+#part1 > .mob_btn2 {
+    position: fixed;
+    top: 70%;
+}
+
+#part2 {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#part2 > a {
+    position: fixed;
+    left: 60%;
+    background: chartreuse;
+    width: 80px;
+    height: 55px;
+    margin: 0 0;
+    border: 0px solid;
+    border-radius: 30%;
+}
+#part2 > .mob_btn {
+    position: fixed;
+    top: 30%;
+}
+#part2 > .mob_btn2 {
+    position: fixed;
+    top: 70%;
+}
+
+#part1 > a > span, #part2 > a > span {
+    font-size: large;
+    text-align: center;
+    margin: 0 auto;
+    width: 80px;
+    height: 55px;
+    border: 0px solid;
+    border-radius: 30%;
+}
+
+.fa-close {
+    color: #090909;
 }

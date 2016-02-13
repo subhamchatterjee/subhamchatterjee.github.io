@@ -22,6 +22,22 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     mob = true;
 }
 
+function deviceCheck() {
+    if(mob==true) {
+        var btns = document.getElementsByClassName("btn");
+        var btns2 = document.getElementsByClassName("btn2");
+        var mob_btns = document.getElementsByClassName("mob_btn");
+        var mob_btns2 = document.getElementsByClassName("mob_btn2");
+        var i=0;
+        while(btns[i]) {
+            btns[i].remove();
+            btns2[i].remove();
+            document.getElementById("mob_nav_btn").style.display = "block";
+            i=0;
+        }
+    }
+}
+
 // Run only if device is desktop
 
 if(!mob) {
