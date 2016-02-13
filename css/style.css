@@ -371,7 +371,7 @@ span {
 #mob_nav {
     display: none;
     color: white;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     position: absolute;
     z-index: 1000;
     height: 100%;
@@ -388,11 +388,11 @@ span {
     position: fixed;
     left: 25%;
     background: dodgerblue;
-    width: 80px;
+    width: 100px;
     height: 55px;
     text-align: center;
     border: 0px solid;
-    border-radius: 30%;
+    border-radius: 40%;
 }
 #part1 > .mob_btn {
     position: fixed;
@@ -413,11 +413,11 @@ span {
     position: fixed;
     left: 60%;
     background: chartreuse;
-    width: 80px;
+    width: 100px;
     height: 55px;
     margin: 0 0;
     border: 0px solid;
-    border-radius: 30%;
+    border-radius: 40%;
 }
 #part2 > .mob_btn {
     position: fixed;
@@ -432,12 +432,12 @@ span {
     font-size: large;
     text-align: center;
     margin: 0 auto;
-    width: 80px;
+    width: 100px;
     height: 55px;
     border: 0px solid;
-    border-radius: 30%;
+    border-radius: 40%;
 }
 
 .fa-close {
-    color: #090909;
+    color: #DEDEDE;
 }

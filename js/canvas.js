@@ -21,48 +21,29 @@ var mob = false;
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     mob = true;
 }
-
-function deviceCheck() {
-    if(mob==true) {
-        var btns = document.getElementsByClassName("btn");
-        var btns2 = document.getElementsByClassName("btn2");
-        var mob_btns = document.getElementsByClassName("mob_btn");
-        var mob_btns2 = document.getElementsByClassName("mob_btn2");
-        var i=0;
-        while(btns[i]) {
-            btns[i].remove();
-            btns2[i].remove();
-            document.getElementById("mob_nav_btn").style.display = "block";
-            i=0;
-        }
-    }
-}
-
-// Run only if device is desktop
-
-if(!mob) {
     
 function init() {
+    
+    // Run only if device is desktop
+    if(!mob) {
+        canvas = document.getElementById('world');
+        
+        if (canvas && canvas.getContext) {
+            context = canvas.getContext('2d');
 
-  canvas = document.getElementById('world');
+            // Register event listeners
+            window.addEventListener('mousemove', documentMouseMoveHandler, false);
+            window.addEventListener('mousedown', documentMouseDownHandler, false);
+            window.addEventListener('mouseup', documentMouseUpHandler, false);
+            document.addEventListener('touchstart', documentTouchStartHandler, false);
+            document.addEventListener('touchmove', documentTouchMoveHandler, false);
+            window.addEventListener('resize', windowResizeHandler, false);
 
-  if (canvas && canvas.getContext) {
-    context = canvas.getContext('2d');
-
-    // Register event listeners
-    window.addEventListener('mousemove', documentMouseMoveHandler, false);
-    window.addEventListener('mousedown', documentMouseDownHandler, false);
-    window.addEventListener('mouseup', documentMouseUpHandler, false);
-    document.addEventListener('touchstart', documentTouchStartHandler, false);
-    document.addEventListener('touchmove', documentTouchMoveHandler, false);
-    window.addEventListener('resize', windowResizeHandler, false);
-
-    createParticles();
-
-    windowResizeHandler();
-
-    setInterval(loop, 1000 / 120);
-  }
+            createParticles();
+            windowResizeHandler();
+            setInterval(loop, 1000 / 120);
+        }
+    }
 }
 
 function createParticles() {
@@ -188,8 +169,4 @@ function loop() {
     context.arc(particle.position.x, particle.position.y, particle.size / 1.5, 0, Math.PI * 2, true);
     context.fill();
   }
-}
-
-window.onload = init;
-
 }
