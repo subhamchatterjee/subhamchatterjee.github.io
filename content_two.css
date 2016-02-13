@@ -1,0 +1,215 @@
+body {
+    overflow: hidden;
+}
+
+ul, #nav li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#content_two {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+}
+
+#works {
+    width: 100%;
+    height: inherit;
+    position: relative;
+    left: 55px;
+}
+
+#work_one {
+    display: table;
+    background-color: rgb(188, 222, 255);
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+#work_two {
+    display: table;
+    background-color: rgb(217, 255, 179);
+    width: 100%;
+    height: 101%;
+    padding: 15px;
+}
+
+#work_three {
+    display: table;
+    background-color: rgb(188, 222, 255);
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+#work_four {
+    display: table;
+    background-color: rgb(217, 255, 179);
+    width: 100%;
+    height: 101%;
+    padding: 15px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img {
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#rb {
+     box-shadow: 0px 0px 20px dodgerblue; 
+    -webkit-box-shadow: 0px 0px 20px dodgerblue;      
+    -ms-box-shadow: 0px 0px 20px dodgerblue;
+    -o-box-shadow: 0px 0px 20px dodgerblue;
+    color: rgb(188, 222, 255);
+    background-color: dodgerblue;
+}
+
+#jiffi {
+     box-shadow: 0px 0px 20px rgb(100, 202, 0); 
+    -webkit-box-shadow: 0px 0px 20px rgb(100, 202, 0);      
+    -ms-box-shadow: 0px 0px 20px rgb(100, 202, 0);
+    -o-box-shadow: 0px 0px 20px rgb(100, 202, 0);
+    color: rgb(217, 255, 179);
+    background-color: rgb(100, 202, 0);
+}
+
+.work_desc{
+    display: block;
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    float: left;
+}
+
+.work_img {
+    display: table;
+    vertical-align: middle;
+    float: left;
+    margin-left: 5%;
+    width: 35%!important;
+    height: inherit;
+}
+
+#navbar {
+    text-decoration: none;
+    width: 55px;
+    height: 100%;
+    position: fixed;
+    background-color: #1c1c1c;
+    float: left;
+    left: 0;
+    top: 0;
+    display: table;
+}
+
+#nav {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#back {
+    position: fixed;
+    bottom: 10px;
+    left: 25%;
+}
+
+#next {
+    display: block;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+#prev {
+    display: none;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+
+.fa {
+    width: 55px;
+    text-align: center;
+    padding: 15px 0px;
+    color: #505050;
+}
+
+.fa:hover {
+    text-align: center;
+    font-size: 2em;
+    color: #999999;
+}
+
+#nav_text {
+    display: none;
+    font-size: small;
+    text-align: center;
+    color: #999999;
+}
+
+.fa:hover ~ #nav_text {
+    display: block;
+}
+
+.title {
+    font-family: 'Courier New';
+    font-size: 250%;
+    font-weight: 700;
+}
+
+line {
+    display: inline-block;
+    font-size: 120%;
+    text-align: justify;
+    font-family: 'Helvetica';
+}
+
+.desc {
+    text-align: justify;
+    font-size: 100%;
+}
+
+.link {
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Comic Sans';
+    color: whitesmoke;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.mob {
+    width: 100%;
+    text-align: center;
+    
+}
+.mob > img {
+    width: auto;
+    vertical-align: top;
+    margin-bottom: 2px;
+}
+
+.desktop {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.desktop > img {
+    display: block;
+    height: 100px;
+    width: 49%;
+    float: left;
+    margin-left: 2px;
+}

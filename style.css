@@ -4,9 +4,9 @@ html, body {
 	width: 100%;
 	height: 100%;
 	font-family: Helvetica, sans-serif;
-    background: url("images/5.jpg") repeat;
     overflow: hidden;
     cursor: context-menu;
+    background-image: url("images/5.jpg");
 }
 
 a {
@@ -21,14 +21,6 @@ a {
     position: relative;
 }
 
-#content_two {
-    background: url("images/5.jpg") repeat;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    position: absolute;
-}
-
 #one {
     width: 70%;
     height: 100%;
@@ -36,6 +28,7 @@ a {
     position: fixed;
     top: 15%;
     padding-bottom: 20%;
+    z-index: 5;
 }
 
 #photo {
@@ -217,10 +210,9 @@ span {
     font-weight: 700;
 }
 
-
 /* Media Query */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     
     #one {
         width: 75%;
@@ -229,11 +221,11 @@ span {
     }
     
     #text {
-        font-size: 35px;
+        font-size: 45px;
     }
     
     .elegantshadow {
-        font-size: 45px;
+        font-size: 50px;
     }
     
     .text_part2 {
@@ -241,8 +233,8 @@ span {
     }
     
     #photo {
-        width: 120px;
-        height: 168px;
+        width: 130px;
+        height: 182px;
     }
     
     .btn, .btn2 {
@@ -270,7 +262,6 @@ span {
         font-weight: 500;
     }
 }
-
 
 @media screen and (max-height: 600px) {
     
@@ -373,5 +364,9 @@ span {
 }
 
 .landscape {
+    display: none;
+}
+
+.size {
     display: none;
 }
