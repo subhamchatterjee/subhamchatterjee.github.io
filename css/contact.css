@@ -1,0 +1,56 @@
+html,body {
+    background: #2B3E51;
+}
+
+#content {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+h1 {
+    color: ghostwhite;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 250%;
+}
+
+.fa {
+    color: #061A2D;
+    right: 10%;
+}
+
+.fa-3x {
+    color: dodgerblue;
+}
+
+.fa-3x:hover {
+    color: chartreuse;
+}
+
+#home {
+    color: #D2CFFF;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+#home:hover {
+    color: #061A2D;
+}
+
+p {
+    color: #D2CFFF;
+    font-size: large;
+    font-weight: 600;
+}
+
+#me {
+    height: 240px;
+    width: 160px;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+}
