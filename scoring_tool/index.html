@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Scoring Tool</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body onload="showValue()">
+        <hr>
+        <h2 class="center">Score Recommendation</h2>
+        <p class="center">Based on the inputs given by you, we recommend the following score splits that you should aim for to achieve the desired target score.</p>
+        <div class="scores center">
+            <div class="quant-title">
+                <p>Quant Score</p>
+                <div id="q-value" class="score"></div>
+            </div>
+            <div class="add">+</div>
+            <div class="verbal-title">
+                <p>Verbal Score</p>
+                <div id="v-value" class="score"></div>
+            </div>
+            <div class="equal">=</div>
+            <div id="total">
+                <p>Total Score</p>
+                <div id="t-value" class="score"></div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="topic">
+                <p>Algebra</p>
+                <input class="seek" onchange="showValue()" type="range" id="q1" value="0"><div class="value" id="alg_scr"></div>
+                <p>Arithmetic</p>
+                <input class="seek" onmouseup="showValue()" type="range" id="q2" value="0"><div class="value" id="arth_scr"></div>
+            </div>
+            <div class="seperation"></div>
+            <div class="topic">
+                <p>SC</p>
+                <input class="seek" onmouseup="showValue()" type="range" id="v1" value="0"><div class="value" id="sc_scr"></div>
+                <p>CR</p>
+                <input class="seek" onmouseup="showValue()" type="range" id="v2" value="0"><div class="value" id="cr_scr"></div>
+                <p>RC</p>
+                <input class="seek" onmouseup="showValue()" type="range" id="v3" value="0"><div class="value" id="rc_scr"></div>
+            </div>
+        </div>
+        <script>
+            function showValue() {
+                var q1 = document.getElementById("q1").value;
+                var q2 = document.getElementById("q2").value;
+                var v1 = document.getElementById("v1").value;
+                var v2 = document.getElementById("v2").value;
+                var v3 = document.getElementById("v3").value;
+                document.getElementById("alg_scr").innerHTML = q1;
+                document.getElementById("arth_scr").innerHTML = q2;
+                document.getElementById("sc_scr").innerHTML = v1;
+                document.getElementById("cr_scr").innerHTML = v2;
+                document.getElementById("rc_scr").innerHTML = v3;
+                var q = Number(q1) + Number(q2);
+                var v = Number(v1) + Number(v2) + Number(v3);
+                document.getElementById("q-value").innerHTML = q;
+                document.getElementById("v-value").innerHTML = v;
+                var t = Number(q) + Number(v);
+                document.getElementById("t-value").innerHTML = t;
+            }
+        </script>
+    </body>
+</html>
