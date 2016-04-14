@@ -6,6 +6,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     </head>
     <body onload="showValue()">
         <hr>
@@ -30,27 +31,37 @@
         <div class="center">
             <div class="topic">
                 <p>Algebra</p>
-                <input class="seek" onchange="showValue()" type="range" id="q1" value="0"><div class="value" id="alg_scr"></div>
+                <input class="seek" type="range" id="q1" value="0"><div class="value" id="alg_scr"></div>
                 <p>Arithmetic</p>
-                <input class="seek" onmouseup="showValue()" type="range" id="q2" value="0"><div class="value" id="arth_scr"></div>
+                <input class="seek" type="range" id="q2" value="0"><div class="value" id="arth_scr"></div>
             </div>
             <div class="seperation"></div>
             <div class="topic">
                 <p>SC</p>
-                <input class="seek" onmouseup="showValue()" type="range" id="v1" value="0"><div class="value" id="sc_scr"></div>
+                <input class="seek" type="range" id="v1" value="0"><div class="value" id="sc_scr"></div>
                 <p>CR</p>
-                <input class="seek" onmouseup="showValue()" type="range" id="v2" value="0"><div class="value" id="cr_scr"></div>
+                <input class="seek" type="range" id="v2" value="0"><div class="value" id="cr_scr"></div>
                 <p>RC</p>
-                <input class="seek" onmouseup="showValue()" type="range" id="v3" value="0"><div class="value" id="rc_scr"></div>
+                <input class="seek" type="range" id="v3" value="0"><div class="value" id="rc_scr"></div>
             </div>
         </div>
         <script>
+            var seek1 = document.getElementById("q1");
+            var seek2 = document.getElementById("q2");
+            var seek3 = document.getElementById("v1");
+            var seek4 = document.getElementById("v2");
+            var seek5 = document.getElementById("v3");
+            seek1.addEventListener("input",showValue);
+            seek2.addEventListener("input",showValue);
+            seek3.addEventListener("input",showValue);
+            seek4.addEventListener("input",showValue);
+            seek5.addEventListener("input",showValue);
             function showValue() {
-                var q1 = document.getElementById("q1").value;
-                var q2 = document.getElementById("q2").value;
-                var v1 = document.getElementById("v1").value;
-                var v2 = document.getElementById("v2").value;
-                var v3 = document.getElementById("v3").value;
+                var q1 = seek1.value;
+                var q2 = seek2.value;
+                var v1 = seek3.value;
+                var v2 = seek4.value;
+                var v3 = seek5.value;
                 document.getElementById("alg_scr").innerHTML = q1;
                 document.getElementById("arth_scr").innerHTML = q2;
                 document.getElementById("sc_scr").innerHTML = v1;
