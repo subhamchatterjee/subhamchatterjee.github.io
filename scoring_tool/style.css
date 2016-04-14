@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+hr {
+    margin: 80px 0 60px 0;
+}
+
+.center {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.scores {
+    width: 90%;
+    height: 160px;
+    display: inline-block;
+}
+
+.quant-title {
+    float: left;
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+}
+
+.score {
+    font-weight: bold;
+    font-size: 40px;
+    width: 180px;
+    height: 60px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+#q-value {
+}
+
+.add {
+    float: left;
+    width: 10%;
+    line-height: 60px;
+    margin-top: 50px;
+    display: inline;
+    font-size: 60px;
+    text-align: center;
+    color: #323232;
+}
+
+.verbal-title {
+    float: left;
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+}
+
+.verbal {
+    width: 180px;
+    height: 60px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.equal {
+    float: left;
+    width: 15%;
+    line-height: 60px;
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 60px;
+    text-align: center;
+    color: #323232;
+}
+
+#total {
+    float: left;
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+}
+
+#t-value {
+    width: 180px;
+    height: 60px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.topic {
+    margin-top: 20px;
+    margin-right: 5%;
+    width: 25%;
+    float: left;
+}
+.topic > p {
+    margin: 5px 0;
+}
+.seek {
+    width: 85%;
+}
+
+.value {
+    float: right;
+}
+
+.seperation {
+    width: 1px;
+    height: 220px;
+    background-color: #828282;
+    display: inline-block;
+    float: left;
+    margin-right: 5%;
+}
