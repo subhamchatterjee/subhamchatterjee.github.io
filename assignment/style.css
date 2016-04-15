@@ -229,10 +229,6 @@ section {
     width: auto;
     height: 410px;
     background: #1F2326;
-    background: -webkit-linear-gradient(top, black , #1F2326);
-    background: -o-linear-gradient(bottom, black, #1F2326);
-    background: -moz-linear-gradient(bottom, black, #1F2326);
-    background: linear-gradient(to bottom, black , #1F2326);
 }
 
 #left {
