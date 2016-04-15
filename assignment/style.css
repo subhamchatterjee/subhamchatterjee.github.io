@@ -45,8 +45,8 @@ a,li,ul {
 }
 
 .center {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #navbar-top {
@@ -64,6 +64,9 @@ a,li,ul {
 }
 
 .social-icons {
+    width: 30%;
+    height: 20px;
+    display: inline-block;
     overflow: hidden;
     position: absolute;
     right: 0;
@@ -73,7 +76,10 @@ a,li,ul {
 .fa {
     color: #A3BFC6;
     opacity: 0.5;
-    padding-left: 25px;
+    line-height: 20px;
+    width: 18%;
+    text-align: center;
+    display: inline-block;
 }
 
 .fa:hover{
@@ -158,7 +164,7 @@ section {
 #banner-content {
     display: block;
     width: 100%;
-    color: rgba(255,255,255,0.55);
+    color: rgba(255,255,255,0.65);
     top: 350px;
     font-weight: bold;
     text-align: center;
@@ -223,6 +229,10 @@ section {
     width: auto;
     height: 410px;
     background: #1F2326;
+    background: -webkit-linear-gradient(top, black , #1F2326);
+    background: -o-linear-gradient(bottom, black, #1F2326);
+    background: -moz-linear-gradient(bottom, black, #1F2326);
+    background: linear-gradient(to bottom, black , #1F2326);
 }
 
 #left {
@@ -286,7 +296,7 @@ section {
     padding-top: 44px;
     padding-left: 17px;
     margin-top: -50px;
-    left: 180px;
+    left: 300px;
     width: 100px;
     height: 100px;
     color: #ED455E;
@@ -295,10 +305,11 @@ section {
 }
 
 h1 {
-    padding-left: 80px;
+    padding-left: 200px;
+    line-height: 40px;
     font-size: 30px;
     font-weight: bolder;
-    font-family: 'HelveticaNeue-l';
+    font-family: 'Iceland', cursive;
 }
 
 .match {
@@ -338,7 +349,15 @@ h1 {
     text-align: center;
     display: inline-block;
     float: left;
-    background: url("images/fighter.jpg") no-repeat;
+}
+
+#fighter-one-img {
+    background: url("images/fighter-one.jpg") no-repeat;
+    background-size: cover;
+}
+
+#fighter-three-img {
+    background: url("images/fighter-three.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -388,6 +407,7 @@ h1 {
 
 #footer {
     margin-top: -1px;
+    width: 90%;
     height: 200px;
     color: white;
     font-size: 13px;
@@ -396,8 +416,8 @@ h1 {
 
 #footer > ul {
     display: inline-block;
-    border: 1px solid rgba(255,255,255,0.2);
-    padding: 10px 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 10px 0px;
 }
 
 #footer > ul.footer-links {
@@ -407,15 +427,19 @@ h1 {
 
 #footer > ul.icons {
     float: left;
-    padding-left: 40px;
-    padding-right: 0px;
-    width: calc(35% - 104px);
+    display: inline-block;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    width: calc(35% - 1px);
 }
 
 #footer > ul > li{
+    width: 25%;
+    text-align: center;
     float: left;
     display: inline-block;
-    padding-right: 40px;
+}
+
+.fa {
 }
 
 .footer-sponsors {
@@ -447,10 +471,10 @@ h1 {
 }
 
 .sponsors {
-    margin-left: 50px;
     display: inline-block;
-    width: 60%;
-    height: 180px;
+    float: right;
+    width: 69%;
+    height: 182px;
     background: url("images/sponsors.png") no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
