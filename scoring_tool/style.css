@@ -85,6 +85,7 @@ hr {
 @media screen and (max-width: 800px) {
 
     .center {
+        text-align: justify;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -124,5 +125,67 @@ hr {
 
     .topic {
         width: 45%;
+    }
+
+    .seek {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 359px) {
+
+    .center {
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .scores {
+        height: auto;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .score {
+        width: 145px;
+    }
+
+    .scr {
+        width: 100%;
+    }
+
+    .sign {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #equal {
+        width: 100%;
+    }
+
+    #total {
+        width: 100%;
+    }
+
+    .seekbar {
+        width: 80%;
+        height: 240px;
+        display: block;
+    }
+
+    .topic {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10%;
+    }
+
+    .seperation {
+        width: 100%;
+        height: 1px;
+        margin: 0 0 10% 0;
+    }
+
+    .seek {
+        width: 85%;
     }
 }
