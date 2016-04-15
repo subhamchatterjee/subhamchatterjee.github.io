@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="style.css" />
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body onload="showValue()">
         <hr>
@@ -45,35 +46,5 @@
                 <input class="seek" type="range" id="v3" value="0"><div class="value" id="rc_scr"></div>
             </div>
         </div>
-        <script>
-            var seek1 = document.getElementById("q1");
-            var seek2 = document.getElementById("q2");
-            var seek3 = document.getElementById("v1");
-            var seek4 = document.getElementById("v2");
-            var seek5 = document.getElementById("v3");
-            seek1.addEventListener("input",showValue);
-            seek2.addEventListener("input",showValue);
-            seek3.addEventListener("input",showValue);
-            seek4.addEventListener("input",showValue);
-            seek5.addEventListener("input",showValue);
-            function showValue() {
-                var q1 = seek1.value;
-                var q2 = seek2.value;
-                var v1 = seek3.value;
-                var v2 = seek4.value;
-                var v3 = seek5.value;
-                document.getElementById("alg_scr").innerHTML = q1;
-                document.getElementById("arth_scr").innerHTML = q2;
-                document.getElementById("sc_scr").innerHTML = v1;
-                document.getElementById("cr_scr").innerHTML = v2;
-                document.getElementById("rc_scr").innerHTML = v3;
-                var q = Number(q1) + Number(q2);
-                var v = Number(v1) + Number(v2) + Number(v3);
-                document.getElementById("q-value").innerHTML = q;
-                document.getElementById("v-value").innerHTML = v;
-                var t = Number(q) + Number(v);
-                document.getElementById("t-value").innerHTML = t;
-            }
-        </script>
     </body>
 </html>
