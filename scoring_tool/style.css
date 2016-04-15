@@ -22,7 +22,7 @@ hr {
     display: inline-block;
 }
 
-.quant-title {
+.scr {
     float: left;
     width: 25%;
     text-align: center;
@@ -38,55 +38,19 @@ hr {
     display: inline-block;
 }
 
-#q-value {
-}
-
-.add {
+.sign {
     float: left;
     width: 10%;
     line-height: 60px;
     margin-top: 50px;
-    display: inline;
+    display: inline-block;
     font-size: 60px;
     text-align: center;
     color: #323232;
 }
 
-.verbal-title {
-    float: left;
-    width: 25%;
-    display: inline-block;
-    text-align: center;
-}
-
-.verbal {
-    width: 180px;
-    height: 60px;
-    border: 1px solid black;
-    display: inline-block;
-}
-
-.equal {
-    float: left;
+#equal {
     width: 15%;
-    line-height: 60px;
-    margin-top: 50px;
-    display: inline-block;
-    font-size: 60px;
-    text-align: center;
-    color: #323232;
-}
-
-#total {
-    float: left;
-    width: 25%;
-    display: inline-block;
-    text-align: center;
-}
-
-#t-value {
-    border: 1px solid black;
-    display: inline-block;
 }
 
 .topic {
@@ -94,9 +58,11 @@ hr {
     width: 25%;
     float: left;
 }
+
 .topic > p {
     margin: 5px 0;
 }
+
 .seek {
     width: 85%;
 }
@@ -133,19 +99,15 @@ hr {
         width: 125px;
     }
 
-    .quant-title {
+    .scr {
         width: 45%;
     }
 
-    .add {
+    .sign {
         width: 10%;
     }
 
-    .verbal-title {
-        width: 45%;
-    }
-
-    .equal {
+    #equal {
         width: 100%;
         margin-top: 30px;
     }
