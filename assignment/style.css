@@ -60,7 +60,7 @@ a,li,ul {
 
 #navbar-top > div {
     position: relative;
-    height: 80px;
+    height: 50px;
 }
 
 .social-icons {
@@ -144,7 +144,7 @@ a,li,ul {
 
 section {
     display: block;
-    padding-top: 135px;
+    padding-top: 105px;
     overflow: hidden;
     position: relative;
 }
@@ -175,12 +175,13 @@ section {
     display: inline-block;
     float: left;
     background: url("images/arrow.png") no-repeat;
+    opacity: 0.5;
     width: 100px;
     height: 110px;
 }
 
 #prev:hover {
-    background-repeat: repeat-x;
+    opacity: 1;
 }
 
 #title {
@@ -194,6 +195,7 @@ section {
     background: url("images/arrow.png") no-repeat;
     width: 100px;
     height: 110px;
+    opacity: 0.5;
     -webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
@@ -202,7 +204,7 @@ section {
 }
 
 #next:hover {
-    background-repeat: repeat-x;
+    opacity: 1;
 }
 
 #btn {
