@@ -71,6 +71,11 @@ hr {
     float: right;
 }
 
+.error {
+    margin-top: 5%;
+    display: none;
+}
+
 .seperation {
     width: 1px;
     height: 200px;
