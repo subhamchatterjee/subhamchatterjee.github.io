@@ -32,6 +32,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var v = v1 + v2 + v3;
         var t = q + v;
 
+        if((q < 20) || (q > 180)) {
+            document.getElementById("q_error").style.display = "block";
+        }
+        else document.getElementById("q_error").style.display = "none";
+
+        if((v < 30) || (v > 270)) {
+            document.getElementById("v_error").style.display = "block";
+        }
+        else document.getElementById("v_error").style.display = "none";
+
         document.getElementById("q-value").innerHTML = q;
         document.getElementById("v-value").innerHTML = v;
         document.getElementById("t-value").innerHTML = t;
