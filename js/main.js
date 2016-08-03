@@ -14,12 +14,6 @@ $(document).ready(function () {
     $(".btn").hover(function () {
         $(this).addClass("btn_animate");        
     });
-    $(".btn2").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function () {
-        $(this).removeClass("btn_animate2");  
-    });
-    $(".btn2").hover(function () {
-        $(this).addClass("btn_animate2");        
-    });
     window.onload = deviceCheck();
     window.onload = init();
 });
@@ -38,7 +32,6 @@ function mob_nav() {
 function deviceCheck() {
     if(mob==true) {
         var btns = document.getElementsByClassName("btn");
-        var btns2 = document.getElementsByClassName("btn2");
         var mob_btns = document.getElementsByClassName("mob_btn");
         var mob_btns2 = document.getElementsByClassName("mob_btn2");
         var i=0;

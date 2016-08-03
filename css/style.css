@@ -34,20 +34,11 @@ a {
 #photo {
     width: 200px;
     height: 280px;
-    border: 10px solid transparent;
-    border-image: linear-gradient(to left bottom, dodgerblue 0%, chartreuse 33%, chartreuse 66%, dodgerblue 100%);
-    border-image-slice: 1;
+    border: 6px solid #414141;
     margin: auto;
     background-image: url("../images/my_face.jpg");
     background-size: cover;
-    background-position: right;
-    -webkit-transition: background-position .5s ease;
-    transition: background-position .5s ease;
     float: right;
-}
-
-#photo:hover {
-    background-position: left;
 }
 
 #text {
@@ -72,10 +63,10 @@ a {
 }
 
 @keyframes sponge {
-  0% {transform: scale(1); color: dodgerblue;}
+  0% {transform: scale(1);}
   30% {transform: scaleX(1.25) scaleY(0.75);}
-  40% {transform: scaleX(0.75) scaleY(1.25);}
-  60% {transform: scaleX(1.15) scaleY(0.85); color: dodgerblue;}
+  40% {transform: scaleX(0.75) scaleY(1.25); color: rgba(65, 65, 65, 0.5);}
+  60% {transform: scaleX(1.15) scaleY(0.85); color: rgba(65, 65, 65, 0.7);}
   100% {transform: scale(1);}
 }
 .sponge {
@@ -135,20 +126,10 @@ a {
 .btn {
     display: table;
     width: 10%;
-    height: 10%;
+    height: 8%;
     border: 0px solid;
-    border-radius: 50%;
-    background-color: dodgerblue;
-    position: fixed;
-}
-
-.btn2 {
-    display: table;
-    width: 10%;
-    height: 10%;
-    border: 0px solid;
-    border-radius: 50%;
-    background-color: chartreuse;
+    border-radius: 10%;
+    background-color: rgba(65, 65, 65, 0.7);
     position: fixed;
 }
 
@@ -178,18 +159,8 @@ a {
 }
 
 @keyframes btn_animate {
-    40% {transform: scaleX(1.25) scaleY(1.25) rotate(20deg); background-color: chartreuse;}
-    80% {transform: scaleX(1.25) scaleY(1.25) rotate(-20deg); background-color: chartreuse;}
-}
-
-.btn_animate2 {
-    animation-name: btn_animate2;
-    animation-duration: 1s;
-}
-
-@keyframes btn_animate2 {
-    40% {transform: scaleX(1.25) scaleY(1.25) rotate(-20deg); background-color: dodgerblue;}
-    80% {transform: scaleX(1.25) scaleY(1.25) rotate(20deg); background-color: dodgerblue;}
+    40% {transform: scaleX(1.25) scaleY(1.25) rotate(10deg); background-color: rgba(25, 25, 25 ,0.7);}
+    80% {transform: scaleX(1.25) scaleY(1.25) rotate(-10deg); background-color: rgba(25, 25, 25 ,0.7);}
 }
 
 span {
@@ -228,7 +199,7 @@ span {
         height: 182px;
     }
     
-    .btn, .btn2 {
+    .btn {
         bottom: 20%;
     }
     
@@ -278,7 +249,7 @@ span {
             top: 20%;
             left: 15%;
         }
-        .btn,.btn2 {
+        .btn {
             bottom: 20%;
         }
     }
@@ -303,7 +274,7 @@ span {
             height: 560px;
         }
         
-        .btn, .btn2 {
+        .btn {
             bottom: 20%;
         }
         
