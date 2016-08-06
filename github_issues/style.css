@@ -15,6 +15,18 @@ html, body {
 	text-align: center;
 }
 
+.help-text {
+	display: none;
+	background-color: #f5f5f5;
+	border: 1px solid #b0b0b0;
+	border-radius: 3px;
+	padding: 20px;
+}
+
+.help-text.active {
+	display: block;
+}
+
 #title {
 	position: absolute;
 	text-align: left;
@@ -46,6 +58,9 @@ input[type = "text"].search-query {
 .search-suggestions {
 	display: none;
 	text-align: left;
+    max-height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .search-suggestions.active {
@@ -66,6 +81,10 @@ input[type = "text"].search-query {
 }
 
 .search-suggestions-item:hover {
+	background-color: #f5f5f5;
+}
+
+.search-suggestions-item.selected {
 	background-color: #f5f5f5;
 }
 

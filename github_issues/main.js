@@ -18,8 +18,8 @@ $(document).ready(function() {
         return false;
     });
     
-    $sQ.keyup(function() {
-    	showSuggestions($(this));
+    $sQ.keyup(function(event) {
+        showSuggestions($(this));
     });
     
     $sQ.focus(function() {
@@ -46,7 +46,7 @@ function getReposPage(repolink, pageNo, repoList, callback) {
         data.forEach(function(v) {
             repoList.push(v);
         });
-        //getReposPage(repolink, pageNo + 1, repoList, callback);
+        getReposPage(repolink, pageNo + 1, repoList, callback);
         callback();
     });
 }
@@ -77,6 +77,7 @@ function showIssues() {
     $('.issue-details').removeClass('active');
     $('#counter').removeClass('active');
     $('.user-details').removeClass('active');
+    $('.help-text').removeClass('active');
     $issuesHeader.html('<strong>' + repoName + '</strong>' + ' - Issues for ' + todayDateStr);
 
     $issuesDiv.addClass('active');
@@ -129,6 +130,7 @@ function getIssueDetails(repoIssuesList, $clickedIssue) {
 function showIssueDetails(issueObj, counter) {
     $('.user-details').removeClass('active');
     $('.issues').removeClass('active');
+    $('.help-text').removeClass('active');
     $('#counter').addClass('active').html(counter);
 
     issueLabelsHtml = '<span class="issue-labels">';
@@ -165,7 +167,9 @@ function getUserDetails(issueObj, callback) {
 
 function showUserDetails(issueObj, counter) {
     $('.issue-details').removeClass('active');
+    $('.issues').removeClass('active');
     $('#counter').removeClass('active');
+    $('.help-text').removeClass('active');
     $('.user-details').addClass('active');
 
     backToIssueDetailsHtml = '<span id="back-to-issue-details" class="chevron left back-link"></span>'
