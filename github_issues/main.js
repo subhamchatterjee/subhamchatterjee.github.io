@@ -3,7 +3,7 @@ $(document).ready(function() {
     var $sQ = $('#searchQuery');
 
     $('#username-form').submit(function() {
-        $('.spinner').show();
+        $('#repolist-loading').show();
         username = $('.username').val();
         if(username == '' || !username) {
             return;
@@ -12,7 +12,7 @@ $(document).ready(function() {
         repolink = 'https://api.github.com/users/' + username + '/repos';
         repoList = getRepos(repolink, function() {
             $('.lightbox').removeClass('active');
-            $('.spinner').hide();
+            $('#repolist-loading').hide();
             $('#searchQuery').focus();
         });
         return false;
@@ -65,9 +65,12 @@ function getIssues(sinceDate, callback) {
     var issuesUrl = 'https://api.github.com/repos/' + username + '/' + repoName + '/issues?since=' + formatDateISO(sinceDate);
     $.ajax(issuesUrl).then(function(data) {
         repoIssuesList = data;
-        
+        $('.help-text .text').show();
+        $('#issuelist-loading').hide();
         callback();
     });
+    $('.help-text .text').hide();
+    $('#issuelist-loading').show();
 }
 
 function showIssues() {

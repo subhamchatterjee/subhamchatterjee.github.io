@@ -21,7 +21,14 @@
 		</div>
 		<div class="container">
 			<h2 id="header"></h2>
-			<div class="help-text active">Start typing the Github repository name in the search bar above to get a list of suggestions.</div>
+			<div class="help-text active">
+				<span class="text">Start typing the Github repository name in the search bar above to get a list of suggestions.</span>
+				<div class="spinner" id="issuelist-loading">
+  					<div class="bounce1"></div>
+  					<div class="bounce2"></div>
+  					<div class="bounce3"></div>
+				</div>
+			</div>
 			<div class="issues"></div>
 			<div class="issue-details"></div>
 			<div class="user-details"></div>
@@ -36,7 +43,7 @@
 						<button id="submit" type="submit">Submit</button>
 					</form>
 				</div>
-				<div class="spinner">
+				<div class="spinner" id="repolist-loading">
   					<div class="bounce1"></div>
   					<div class="bounce2"></div>
   					<div class="bounce3"></div>

@@ -290,7 +290,12 @@ h2#header {
 	background-color: #d0d0d0;
 }
 
-.spinner {
+#issuelist-loading {
+	display: none;
+	text-align: center;
+}
+
+#repolist-loading {
 	display: none;
 	margin: 30px auto 0;
 	text-align: center;
