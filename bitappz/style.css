@@ -1,0 +1,344 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #505050;
+}
+
+.navbar {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid #c3c3c3;
+    margin: 0;
+}
+
+.navbar .logo {
+    width: auto;
+    height: 50px;
+    vertical-align: middle;
+    margin: 5px 60px;
+}
+
+.search {
+    padding: 0px 10px;
+    border: 1px solid #a0a0a0;
+    box-shadow:0 0 3px #c0c0c0 inset;
+    width: 400px;
+    height: 35px;
+    border-radius: 15px;
+    vertical-align: middle;
+    color: #606060;
+}
+
+.search:focus {
+    outline: none;
+    border-radius: 12px;
+    border-color: #9ecaed;
+    box-shadow:0 0 10px #9ecaed;
+}
+
+.nav-button {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: url('http://centriclearning.net/images/mobile-nav-button2.png') no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    width: 100%;
+    display: inline-block;
+}
+
+.menu .apps, .games {
+    cursor: pointer;
+    width: 50%;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.4em;
+    border-bottom: 1px solid #c3c3c3;
+    box-sizing: border-box;
+}
+
+.menu .apps {
+    border-right: 1px solid #c3c3c3;
+}
+
+.image-slider {
+    width: 100%;
+    display: inline-block;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.image {
+    width: 300%;
+    display: block;
+    overflow: hidden;
+    left: 0;
+}
+
+.image .slider-image{
+    width: 33%;
+    display: inline-block;
+    height: auto;
+    -webkit-animation: loop;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes loop {
+    0% {
+        -webkit-transform: translateX(0px);
+    }
+    27% {
+        -webkit-transform: translateX(0px);
+    }
+    33% {
+        -webkit-transform: translateX(-100%);
+    }
+    60% {
+        -webkit-transform: translateX(-100%);
+    }
+    66% {
+        -webkit-transform: translateX(-200%);
+    }
+    94% {
+        -webkit-transform: translateX(-200%);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+    }
+}
+
+.container {
+    width: 100%;
+    border-top: 1px solid #c3c3c3;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.wrapper {
+    width: 85%;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.items {
+    width: 125%;
+    overflow: hidden;
+}
+
+.item{
+    width: 20%;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+img.item-image {
+    width: 60px;
+    margin: 0 auto;
+}
+
+.item-carousel {
+    width: 100%;
+    display: inline-flex;
+}
+
+.left {
+    cursor: pointer;
+    width: 30px;
+    position: absolute;
+    left: 5%;
+    z-index: 100;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.left img {
+    width: 30px;
+    opacity: 0.7;
+}
+
+.left img:hover, .right img:hover {
+    opacity: 1;
+}
+
+.right {
+    cursor: pointer;
+    width: 30px;
+    position: absolute;
+    right: 5%;
+    z-index: 100;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.right img {
+    opacity: 0.7;
+    width: 30px;
+    transform: rotate(180deg);
+}
+
+.content {
+    border-top: 1px solid #c3c3c3;
+    margin: 5%;
+}
+
+.part-one {
+    text-align: left;
+    overflow: auto;
+}
+
+.part-one h2 {
+    font-weight: 200;
+}
+
+.part-one > span {
+    font-weight: 500;
+}
+
+.cards {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    float: left;
+}
+
+.card-img {
+    margin: 5px auto;
+    width: 90%;
+    height: 65%;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#card-one {
+    background-image: url(http://img1.koplayer.com/icon/com.endomondo.android/com.endomondo.android_110.png);
+}
+
+#card-two {
+    background-image: url(http://img1.koplayer.com/icon/com.popularapp.sevenmins/com.popularapp.sevenmins_110.png);
+}
+
+#card-three {
+    background-image: url(http://img.koplayer.com/icon/si.modula.android.instantheartrate_110.png);
+}
+
+#card-four {
+    background-image: url(http://img1.koplayer.com/icon/com.caynax.a6w/com.caynax.a6w_110.png);
+}
+
+#card-five {
+    background-image: url(http://img1.koplayer.com/icon/com.webmd.android/com.webmd.android_110.png);
+}
+
+#card-six {
+    background-image: url(http://img1.koplayer.com/icon/com.fitnow.loseit/com.fitnow.loseit_110.png);
+}
+
+#card-seven {
+    background-image: url(http://img.koplayer.com/icon/com.nike.plusgps_110.png);
+}
+
+#card-eight {
+    background-image: url(http://img.koplayer.com/icon/com.dailyyoga.inc_110.png);
+}
+
+.card-name {
+    overflow: hidden;
+}
+
+button.card-download {
+    margin-top: 5px;
+    background-color: #303030;
+    border: 0;
+    padding: 5px 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: left;
+    background-color: #404040;
+    margin-top: 30px;
+    overflow: auto;
+    color: #b0b0b0;
+    padding-bottom: 30px;
+}
+
+.type {
+    padding-left: 5%;
+    width: 25%;
+    margin-top: 30px;
+    float: left;
+}
+
+.type h3 {
+    color: ghostwhite;
+}
+
+.type li {
+    list-style: none;
+}
+
+.footer .logo {
+    float: left;
+    width: 40%;
+    height: 200px;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    margin: auto auto;
+    margin-top: 30%;
+    margin-bottom: 5%;
+}
+
+.logo p {
+    padding: 0 20%;
+}
+
+@media only screen and (max-device-width: 540px) {
+    .search {
+        display: none;
+        margin: 0 auto;
+        width: 70%;
+    }
+    
+    .nav-button {
+        display: block;
+    }
+    
+    .navbar {
+        height: 60px;
+        text-align: center;
+    }
+    
+    .wrapper {
+        width: 75%;
+    }
+    
+    .items {
+        width: 165%;
+    }
+}
