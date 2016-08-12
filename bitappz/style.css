@@ -341,4 +341,12 @@ button.card-download {
     .items {
         width: 165%;
     }
+    
+    .type {
+        width: 50%;
+    }
+    
+    .footer .logo {
+        width: 100%;
+    }
 }
