@@ -1,0 +1,367 @@
+html, body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    color: whitesmoke;
+    background-color: #303030;
+}
+
+.nav-button {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #303030;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-button.getdown {
+    top: 200px;
+}
+
+.nav-button .navicon {
+    line-height: 50px;
+}
+
+.nav-button.active {
+    display: block;
+}
+
+.navicon:hover {
+    color: #14b97d;
+}
+
+.navbar {
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: #303030;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.nav a {
+    color: white;
+    width: 25%;
+    line-height: 50px;
+    list-style: none;
+    float: left;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav a.active {
+    color: #14b97d;
+}
+
+.nav a:hover {
+    color: #14b97d;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    max-height: 100%;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%;
+    max-height: 600px;
+    box-shadow: 500px 0px 0px #bbb, -500px 0px 0px #bbb;
+}
+
+.banner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(overlay.png) no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.heading-name {
+    position: absolute;
+    z-index: 99;
+    bottom: 120px;
+    color: white;
+    left: 0;
+    right: 0;
+    font-size: 3.5em;
+    font-weight: 200;
+}
+
+.heading-name strong {
+    color: #14b97d;
+}
+
+.heading-para {
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    position: absolute;
+    color: white;
+    z-index: 99;
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.heading-para strong {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.next {
+    color: white;
+    z-index: 99;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+.next:hover {
+    color: #14b97d;
+}
+
+.section-heading {
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 3em;
+}
+
+.about {
+    width: 100%;
+    height: 650px;
+    background: url('http://wallpapercave.com/wp/YHlk56g.jpg') no-repeat;
+    background-size: cover;
+}
+
+.type {
+    width: 50%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.type-heading {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.type-heading:hover {
+    color: #14b97d;
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 50px;
+    width: 200%;
+    overflow: hidden;
+}
+
+.animate {
+    transition: transform 1s ease-in;
+}
+
+.type > h2.active {
+    color: #14b97d;
+}
+
+.bio-body {
+    line-height: 1.5em;
+    text-align: center;
+    height: 300px;
+    float: left;
+    display: inline-block;
+}
+
+.bio-body p {
+    margin-bottom: 50px;
+}
+
+.bio-body a {
+    color: #14b97d;
+    padding: 20px;
+    border: 1px solid #303030;
+}
+
+.bio-body a:hover {
+    color: white;
+    background: #14b97d;
+}
+
+.fa {
+    padding-right: 5px;
+}
+
+.skills-body {
+    line-height: 1.5em;
+    text-align: center;
+    float: left;
+    display: inline-block;
+}
+
+.bio-body, .skills-body {
+    width: 40%;
+    padding: 0 5% 50px 5%;
+}
+
+.note {
+    display: none;
+}
+
+.skillbar {
+    width: 100%;
+    height: 30px;
+    margin: 15px auto;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+.skillbar-title {
+    float: left;
+    width: 25%;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+.skillbar-bar {
+    float: left;
+    display: inline-block;
+    width: 65%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.skillbar-value {
+    display: inline-block;
+    float: left;
+    width: 10%;
+    color: #303030;
+}
+
+.value {
+    background-color: red;
+    opacity: 0.5;
+    height: 100%;
+    width: 0px;
+}
+
+@media only screen and (min-width: 560px) and (max-width: 700px) {
+    .navbar {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 559px) {
+    .navbar {
+        display: none;
+        width: 100%;
+        height: 200px;
+    }
+    
+    .navbar.active {
+        display: block;
+    }
+    
+    .nav-button {
+        display: block;
+    }
+    
+    .nav a {
+        width: 100%;
+    }
+    
+    .banner {
+        background-color: #222;
+    }
+    
+    .banner:after {
+        background: none;
+        background-color: rgba(0,0,0,0.2);
+    }
+    
+    .banner img {
+        box-shadow: none;
+        padding-top: 50px;
+    }
+    
+    .heading-name {
+        padding-bottom: 50px;
+        font-size: 3em;
+    }
+    
+    .heading-para {
+        margin: 0 auto;
+        width: 90%;
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
+    
+    .type {
+        width: 80%;
+    }
+    
+    .bio-body, .skills-body {
+        width: 40%;
+        padding: 0 5% 50px 5%;
+    }
+    
+    .skillbar {
+        font-size: 10px;
+    }
+    
+    .skillbar-title {
+        width: 22%;
+    }
+    
+    .skillbar-bar {
+        width: 68%;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .nav, .banner, .about {
+        display: none;
+    }
+    
+    .note {
+        display: block;
+        text-align: center;
+        width: 100%;
+        line-height: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
