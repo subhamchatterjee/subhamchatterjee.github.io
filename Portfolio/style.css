@@ -83,6 +83,7 @@ html, body, h1, h2, p, a {
     height: 600px;
     max-height: 100%;
     text-align: center;
+    background-color: #222;
 }
 
 .banner img {
@@ -98,9 +99,11 @@ html, body, h1, h2, p, a {
     left: 0;
     bottom: 0;
     right: 0;
-    background: url(overlay.png) no-repeat;
-    background-size: cover;
-    background-color: rgba(0,0,0,0.65);
+    background-color: rgba(0,0,0,0.2);
+}
+
+.background:after {
+    background-color: rgba(0,0,0,0.6);
 }
 
 .heading-name {
@@ -180,7 +183,7 @@ html, body, h1, h2, p, a {
 }
 
 .container {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 200%;
     overflow: hidden;
 }
@@ -294,15 +297,6 @@ html, body, h1, h2, p, a {
     
     .nav a {
         width: 100%;
-    }
-    
-    .banner {
-        background-color: #222;
-    }
-    
-    .banner:after {
-        background: none;
-        background-color: rgba(0,0,0,0.2);
     }
     
     .banner img {
