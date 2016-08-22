@@ -478,6 +478,7 @@ html, body, h1, h2, p, a {
     
     .work {
         width: 90%;
+        margin: 20px auto;
     }
     
     .spotlight {
