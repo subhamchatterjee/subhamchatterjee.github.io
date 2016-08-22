@@ -236,7 +236,7 @@ html, body, h1, h2, p, a {
 }
 
 .skillbar {
-    width: 100%;
+    width: 80%;
     height: 30px;
     margin: 15px auto;
     border: 1px solid #303030;
@@ -250,21 +250,18 @@ html, body, h1, h2, p, a {
     background-color: #14b97d;
     color: white;
     display: inline-block;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .skillbar-bar {
     float: left;
     display: inline-block;
-    width: 65%;
+    width: 75%;
     height: 100%;
     background-color: whitesmoke;
-}
-
-.skillbar-value {
-    display: inline-block;
-    float: left;
-    width: 10%;
-    color: #303030;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .value {
@@ -393,11 +390,15 @@ html, body, h1, h2, p, a {
     color: white;
     font-family: "Raleway", sans-serif;
     letter-spacing: 1px;
-    line-height: 2em;
+    line-height: 45px;
 }
 
 .content .links {
     margin-top: 50px;
+}
+
+.content-icon {
+    font-size: x-large;
 }
 
 .links i {
@@ -469,11 +470,11 @@ html, body, h1, h2, p, a {
     }
     
     .skillbar-title {
-        width: 22%;
+        width: 30%;
     }
     
     .skillbar-bar {
-        width: 68%;
+        width: 70%;
     }
     
     .work {
@@ -492,6 +493,26 @@ html, body, h1, h2, p, a {
     
     .contact {
         height: 570px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .content p {
+        letter-spacing: normal;
+        font-size: small;
+    }
+    
+    .content div {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .content h1 {
+        font-size: 2.5em;
+    }
+    
+    .content-icon {
+        font-size: large;
     }
 }
 
